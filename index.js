@@ -71,7 +71,7 @@ app.post('/updateorders', upload.single('image'), async (req, res) => {
             return;
         }
 
-        for (var i = 0; i < 2000000; i++) {
+        for (var i = 0; i < 4000000; i++) {
             const r = pixels.data[i * 4];
             const g = pixels.data[(i * 4) + 1];
             const b = pixels.data[(i * 4) + 2];
