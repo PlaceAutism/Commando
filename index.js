@@ -65,8 +65,8 @@ app.post('/updateorders', upload.single('image'), async (req, res) => {
             return
         }
 
-        if (pixels.data.length !== 8000000) {
-            res.send('File has to be 2000x1000!');
+        if (pixels.data.length !== 16000000) {
+            res.send('File has to be 2000x2000!');
             fs.unlinkSync(req.file.path);
             return;
         }
